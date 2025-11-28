@@ -1,0 +1,153 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  font-family: "Rajdhani", sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* MAIN APP */
+.App {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* CONVERTER BOX */
+.converter-container {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 30px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(6px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* INPUT */
+input {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  width: 100%;
+}
+
+/* SELECT LAYOUT */
+.selects {
+  display: flex;
+  gap: 12px;
+}
+
+/* BUTTON */
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  background: linear-gradient(90deg, #4f46e5, #06b6d4);
+  color: #fff;
+  font-weight: bold;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.3);
+}
+
+/* RESULT */
+.result {
+  margin-top: 10px;
+  font-size: 1.4rem;
+  color: #ffe066;
+  font-weight: bold;
+}
+
+/* LIVE RATE BOX */
+.rate-box {
+  background: rgba(255, 255, 255, 0.25);
+  padding: 10px;
+  border-radius: 10px;
+  color: #000;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.dropdown {
+  width: 100%;
+  position: relative;
+}
+
+.dropdown-selected {
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #000;
+
+}
+
+.dropdown-menu {
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  margin-top: 8px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+  z-index: 1000;
+}
+
+.dropdown-search {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  outline: none;
+}
+
+.dropdown-options {
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.dropdown-option {
+  padding: 10px;
+  cursor: pointer;
+  color: #000;
+}
+
+.dropdown-option:hover {
+  background: #f0f0f0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+  .selects {
+    flex-direction: column;
+  }
+}
